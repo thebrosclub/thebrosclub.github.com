@@ -1,42 +1,109 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Box Shadow</title>
-		<style type="text/css">
-			p {
-				width: 100px;
-				height: 100px;
-				background-color: #e1ddda;
-				margin: 20px;
-				display: inline-block;}
-			p.one { 
-				-moz-box-shadow: -5px -5px #777777; 
-				-webkit-box-shadow: -5px -5px #777777; 
-				box-shadow: -5px -5px #777777;}
-			p.two {
-				-moz-box-shadow: 5px 5px 5px #777777; 
-				-webkit-box-shadow: 5px 5px 5px #777777;
-				box-shadow: 5px 5px 5px #777777;}  
-			p.three {
-				-moz-box-shadow: 5px 5px 5px 5px #777777; 
-				-webkit-box-shadow: 5px 5px 5px 5px #777777;
-				box-shadow: 5px 5px 5px 5px #777777;} 
-			p.four {
-				-moz-box-shadow: 0 0 10px #777777; 
-				-webkit-box-shadow: 0 0 10px #777777;
-				box-shadow: 0 0 10px #777777;}
-			p.five {
-				-moz-box-shadow: inset 0 0 10px #777777; 
-				-webkit-box-shadow: inset 0 0 10px #777777;
-				box-shadow: inset 0 0 10px #777777;}
-		</style>
-	</head>
-	<body>
-		<p class="one"></p>
-		<p class="two"></p>
-		<p class="three"></p>
-		<br />
-		<p class="four"></p>
-		<p class="five"></p>
-	</body>
+    <head>
+    	<link type="text/css" rel="stylesheet" href="main.css"/>
+    	<script src="https://cdn.firebase.com/js/client/1.1.2/firebase.js"></script>
+    	<title>The Golf Hookup!</title>
+    	
+    </head>
+
+    <body>
+    	<div class="submit"><input type="submit" value="Sign In" /></div>
+    	<div class="submit"><input type="submit" value="Register" /></div>
+    	<h1>Joel you telling me</h1>
+    	<form action="https://github.com/joelharrington/joelharrington.github.com" method="get">
+			<div>
+				<p>Username:
+					<Input type=:"text" name="username" size=:"15" maxlength="30" ><br> 
+				</p>
+				<div>
+					<p>Password:
+						<Input type=:"password" name="password" size=:"15" maxlength="30"> 
+					</p>
+					<div>
+						<p>Select T-Time Owner</p>
+							<select name="owner">
+								<option value="Joel Harrington">Joel Harrington</option>
+								<option value="Bob Carrington">Bob Carrington</option>
+								<option value="Paul Dude">Paul Dude</option>
+							</select>
+					</div>
+				</div>
+			</div>
+			<p>
+					<label for="comments">Comments:</label><br />
+					<textarea rows="4" cols="40" id="comments"></textarea>
+				</p>
+
+		</form><br>
+		<form>
+			<fieldset>
+		    <legend>Upcoming Tournaments:</legend>
+			    Tournament Organizer: <label>Joel</label><br>
+			    Email: <label>mine</label><br>
+			    Date: <label>TBD</label><br>
+			    Course: <label>Course Name</label>
+	  	</fieldset>
+  	</form><br />
+  	<form>
+			<fieldset>
+		    <legend>Announce Tournament:</legend>
+			   <div>
+			    <label>Tourny Organizer: <input type="text" name="name" size="30" maxlength="100"></label><br />
+			    <label>Email: <input type="email" name="email"</label><br /
+			    <label>Tourny Date: <input type="date" name="date"</label><br />
+			    <label>Course Name: <input type="text" name="name" size="30" maxlength="100"></label>
+			    </div>
+	  	</fieldset><br />
+  	</form><br />
+       <!-- <h1 style="color: red">Joel you telline me</h1> /-->
+        
+        <table>
+        	<thead>
+          	<tr class="head">
+				<th>T-Time Owner Photo</th>
+				<th>T-Time Owner Name</th>
+				<th>Course</th>
+				<th>T-Time</th>
+				<th>Spots Available</th>
+            </tr>
+			<tr>
+				<th colspan="1"><img src="https://cloud.githubusercontent.com/assets/8796345/4535608/eb7c1bba-4db6-11e4-8715-71265358b56b.JPG" height="100" width="75" />
+				</th>
+				<td>Joel</td>
+				<td>Miramar</td>
+				<td>10:15</td>
+				<td>2</td>
+			</tr>
+			<tr class="even">
+				<th colspan="1"><img src="https://cloud.githubusercontent.com/assets/8796345/4535608/eb7c1bba-4db6-11e4-8715-71265358b56b.JPG" height="100" width="75" />		
+				</th>
+				<td>Bob</td>
+				<td>Red Hawk</td>
+				<td>12:15</td>
+				<td>1</td>
+			</tr>
+        		<tr></tr>
+        </table>
+            
+            <p>Hello World!</p>
+            <img src="https://cloud.githubusercontent.com/assets/8796345/4515572/dc374812-4bc4-11e4-9add-612002974720.JPG" alt="Smiley face" height="42" width="42">
+            <p>Hello World!2</p>
+            
+            <img src="https://cloud.githubusercontent.com/assets/8796345/4531238/1a507f8c-4d88-11e4-961c-95bf41130b6a.JPG" alt="Home" height="100" width="75">
+            
+            <p>Hello World!3</p>
+            <a href="http://www.codecademy.com">Hello World!3</a>
+            <img src="https://cloud.githubusercontent.com/assets/8796345/4515571/d72e1990-4bc4-11e4-8fc8-4754d21ea117.JPG" alt="Smiley face" height="100" width="100">
+            <a href="http://www.codecademy.com">Hello World!2</a>
+
+	
+	<div>
+			<a href="http://www.newsobserver.com"><span>Home!</span></a>
+	</div>
+	<!--<script src="js/add-content.js"></script>*/-->
+    </body>	
+	
+	
+
 </html>
