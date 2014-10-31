@@ -1,8 +1,12 @@
 h1{
     color: red;
     text-align:center;
-body {
-  background-image: url("https://cloud.githubusercontent.com/assets/8796345/4615915/78c6f09e-52ee-11e4-9dd1-4b27dd49c050.JPG");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.jumbotron {
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
+  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
 }
